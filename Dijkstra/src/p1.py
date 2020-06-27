@@ -5,7 +5,6 @@ from p1_support import load_level, show_level, save_level_costs
 from math import inf, sqrt
 from heapq import heappop, heappush
 
-
 def dijkstras_shortest_path(initial_position, destination, graph, adj):
     """ Searches for a minimal cost path through a graph using Dijkstra's algorithm.
 
@@ -46,6 +45,7 @@ def dijkstras_shortest_path(initial_position, destination, graph, adj):
                     node = came_from[node]  # updating to the parent
                 # Path is from dst to src, reverse it
                 path.reverse()
+                print('total cost: {} '.format(cost_so_far[current]))
             return path
 
         for next_cor in adj(graph, current):
@@ -60,7 +60,6 @@ def dijkstras_shortest_path(initial_position, destination, graph, adj):
                 #for key, value in came_from.items():
                     #print(key, ' : ', value)
 
-
 def dijkstras_shortest_path_to_all(initial_position, graph, adj):
     """ Calculates the minimum cost to every reachable cell in a graph from the initial_position.
 
@@ -73,6 +72,28 @@ def dijkstras_shortest_path_to_all(initial_position, graph, adj):
         A dictionary, mapping destination cells to the cost of a path from the initial_position.
     """
     pass
+
+    graph_cost = {}
+    for cell in graph['spaces'].keys():
+        path =dijkstras_shortest_path(initial_position, cell, graph, adj)
+        if path:
+            #get cost
+        else:
+            graph_cost[cell] = 'inf'
+    for cell in graph['waypoints'].values():
+        path =dijkstras_shortest_path(initial_position, cell, graph, adj)
+        if path:
+            #get cost
+        else:
+            graph_cost[cell] = 'inf'
+    for cell in graph['walls']:
+        path =dijkstras_shortest_path(initial_position, cell, graph, adj)
+        if path:
+            #get cost
+        else:
+            graph_cost[cell] = 'inf'
+
+
 def navigation_edges(level, cell):
     """ Provides a list of adjacent cells and their respective costs from the given cell.
 

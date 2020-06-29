@@ -45,9 +45,9 @@ def redraw():
         x1,x2,y1,y2 = shrink(box)
         canvas.create_rectangle(y1,x1,y2,x2,outline='pink')
 
-    for segment in path:
-        x1,y1 = shrink(segment[0])
-        x2,y2 = shrink(segment[1])
+    for i in range(len(path) - 1):
+        x1, y1 = shrink(path[i])
+        x2, y2 = shrink(path[i + 1])
         canvas.create_line(y1,x1,y2,x2,width=2.0,fill='red')
 
     if source_point:

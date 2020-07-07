@@ -1,0 +1,22 @@
+Experiment result:
+Plotted graph (see experiment_1_result.png)
+-----------------------------------------------------
+Player 1: 100 nodes/tree and Player 2: 10 nodes/tree
+Final win counts: {'draw': 0, 1: 0, 2: 100}
+
+Player 1: 100 nodes/tree and Player 2: 50 nodes/tree
+Final win counts: {'draw': 0, 1: 0, 2: 100}
+
+Player 1: 100 nodes/tree and Player 2: 100 nodes/tree
+Final win counts: {'draw': 0, 1: 0, 2: 100}
+
+Player 1: 100 nodes/tree and Player 2: 150 nodes/tree
+Final win counts: {'draw': 0, 1: 0, 2: 100}
+-----------------------------------------------------
+
+Result: Player 2 wins consistently regardless of its tree size
+(when it has a larger tree size and when it has a smaller tree size).
+This is due to there being no random selection in "Selection" of mcts_vanilla.think.
+Therefore, same child is chosen every time.
+And every game follows the same execution path and have the same outcome.
+

@@ -5,7 +5,7 @@ import random
 from math import sqrt, log
 
 # num_nodes = 1000
-num_nodes = 10
+num_nodes = 50
 explore_faction = 2
 
 def traverse_nodes(node, board, state, identity):

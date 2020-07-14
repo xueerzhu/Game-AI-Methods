@@ -1,0 +1,287 @@
+{
+ "Initial": {},
+ "Goal": {
+   "furnace": 1
+ },
+ "Items": [
+   "bench",
+   "cart",
+   "coal",
+   "cobble",
+   "furnace",
+   "ingot",
+   "iron_axe",
+   "iron_pickaxe",
+   "ore",
+   "plank",
+   "rail",
+   "stick",
+   "stone_axe",
+   "stone_pickaxe",
+   "wood",
+   "wooden_axe",
+   "wooden_pickaxe"
+ ],
+ "Recipes": {
+   "craft wooden_pickaxe at bench": {
+     "Produces": {
+       "wooden_pickaxe": 1
+     },
+     "Requires": {
+       "bench": true
+     },
+     "Consumes": {
+       "plank": 3,
+       "stick": 2
+     },
+     "Time": 1
+   },
+   "craft stone_pickaxe at bench": {
+     "Produces": {
+       "stone_pickaxe": 1
+     },
+     "Requires": {
+       "bench": true
+     },
+     "Consumes": {
+       "cobble": 3,
+       "stick": 2
+     },
+     "Time": 1
+   },
+   "wooden_pickaxe for coal": {
+     "Produces": {
+       "coal": 1
+     },
+     "Requires": {
+       "wooden_pickaxe": true
+     },
+     "Time": 4
+   },
+   "iron_pickaxe for ore": {
+     "Produces": {
+       "ore": 1
+     },
+     "Requires": {
+       "iron_pickaxe": true
+     },
+     "Time": 2
+   },
+   "wooden_axe for wood": {
+     "Produces": {
+       "wood": 1
+     },
+     "Requires": {
+       "wooden_axe": true
+     },
+     "Time": 2
+   },
+   "craft plank": {
+     "Produces": {
+       "plank": 4
+     },
+     "Consumes": {
+       "wood": 1
+     },
+     "Time": 1
+   },
+   "craft stick": {
+     "Produces": {
+       "stick": 4
+     },
+     "Consumes": {
+       "plank": 2
+     },
+     "Time": 1
+   },
+   "craft rail at bench": {
+     "Produces": {
+       "rail": 16
+     },
+     "Requires": {
+       "bench": true
+     },
+     "Consumes": {
+       "ingot": 6,
+       "stick": 1
+     },
+     "Time": 1
+   },
+   "craft cart at bench": {
+     "Produces": {
+       "cart": 1
+     },
+     "Requires": {
+       "bench": true
+     },
+     "Consumes": {
+       "ingot": 5
+     },
+     "Time": 1
+   },
+   "iron_pickaxe for cobble": {
+     "Produces": {
+       "cobble": 1
+     },
+     "Requires": {
+       "iron_pickaxe": true
+     },
+     "Time": 1
+   },
+   "stone_axe for wood": {
+     "Produces": {
+       "wood": 1
+     },
+     "Requires": {
+       "stone_axe": true
+     },
+     "Time": 1
+   },
+   "craft iron_pickaxe at bench": {
+     "Produces": {
+       "iron_pickaxe": 1
+     },
+     "Requires": {
+       "bench": true
+     },
+     "Consumes": {
+       "ingot": 3,
+       "stick": 2
+     },
+     "Time": 1
+   },
+   "craft furnace at bench": {
+     "Produces": {
+       "furnace": 1
+     },
+     "Requires": {
+       "bench": true
+     },
+     "Consumes": {
+       "cobble": 8
+     },
+     "Time": 1
+   },
+   "punch for wood": {
+     "Produces": {
+       "wood": 1
+     },
+     "Time": 4
+   },
+   "stone_pickaxe for ore": {
+     "Produces": {
+       "ore": 1
+     },
+     "Requires": {
+       "stone_pickaxe": true
+     },
+     "Time": 4
+   },
+   "craft iron_axe at bench": {
+     "Produces": {
+       "iron_axe": 1
+     },
+     "Requires": {
+       "bench": true
+     },
+     "Consumes": {
+       "ingot": 3,
+       "stick": 2
+     },
+     "Time": 1
+   },
+   "stone_pickaxe for coal": {
+     "Produces": {
+       "coal": 1
+     },
+     "Requires": {
+       "stone_pickaxe": true
+     },
+     "Time": 2
+   },
+   "craft wooden_axe at bench": {
+     "Produces": {
+       "wooden_axe": 1
+     },
+     "Requires": {
+       "bench": true
+     },
+     "Consumes": {
+       "plank": 3,
+       "stick": 2
+     },
+     "Time": 1
+   },
+   "stone_pickaxe for cobble": {
+     "Produces": {
+       "cobble": 1
+     },
+     "Requires": {
+       "stone_pickaxe": true
+     },
+     "Time": 2
+   },
+   "wooden_pickaxe for cobble": {
+     "Produces": {
+       "cobble": 1
+     },
+     "Requires": {
+       "wooden_pickaxe": true
+     },
+     "Time": 4
+   },
+   "iron_pickaxe for coal": {
+     "Produces": {
+       "coal": 1
+     },
+     "Requires": {
+       "iron_pickaxe": true
+     },
+     "Time": 1
+   },
+   "craft bench": {
+     "Produces": {
+       "bench": 1
+     },
+     "Consumes": {
+       "plank": 4
+     },
+     "Time": 1
+   },
+   "craft stone_axe at bench": {
+     "Produces": {
+       "stone_axe": 1
+     },
+     "Requires": {
+       "bench": true
+     },
+     "Consumes": {
+       "cobble": 3,
+       "stick": 2
+     },
+     "Time": 1
+   },
+   "smelt ore in furnace": {
+     "Produces": {
+       "ingot": 1
+     },
+     "Requires": {
+       "furnace": true
+     },
+     "Consumes": {
+       "coal": 1,
+       "ore": 1
+     },
+     "Time": 5
+   },
+   "iron_axe for wood": {
+     "Produces": {
+       "wood": 1
+     },
+     "Requires": {
+       "iron_axe": true
+     },
+     "Time": 1
+   }
+ }
+}

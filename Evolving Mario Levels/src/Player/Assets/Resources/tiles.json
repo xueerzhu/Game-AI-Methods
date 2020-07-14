@@ -1,0 +1,76 @@
+{
+  "size": 16,
+  "tiles": [
+    {
+      "id": "-",
+      "prefab": ""
+    },
+    {
+      "id": "X",
+      "prefab": "Prefab/BlockStone",
+      "layer": 1
+    },
+    {
+      "id": "?",
+      "prefab": "Prefab/BlockQuestionCoin",
+      "layer": 1
+    },
+    {
+      "id": "M",
+      "prefab": "Prefab/BlockQuestionMushroomRed",
+      "layer": -2
+    },
+    {
+      "id": "B",
+      "prefab": "Prefab/BlockBreakable",
+      "layer": 1
+    },
+    {
+      "id": "o",
+      "prefab": "Prefab/ItemCoin",
+      "layer": 4
+    },
+    {
+      "id": "|",
+      "prefab": "Prefab/PipeBody",
+      "width": 2
+    },
+    {
+      "id": "T",
+      "prefab": "Prefab/PipeTop",
+      "width": 2
+    },
+    {
+      "id": "f",
+      "prefab": "Prefab/EndPoleBody",
+      "width": 2,
+      "layer": 1
+    },
+    {
+      "id": "v",
+      "prefab": "Prefab/EndPoleTop",
+      "width": 2,
+      "layer": 1,
+      "isLevelEnd": true
+    },
+    {
+      "id": "E",
+      "prefab": "Prefab/EnemyGoomba"
+    },
+    {
+      "id": "r",
+      "prefab": "Prefab/ItemMushroomRed",
+      "layer": -1
+    },
+    {
+      "id": "2",
+      "prefab": "Prefab/ItemCoin",
+      "layer": 4
+    },
+    {
+      "id": "m",
+      "prefab": "Prefab/Player",
+      "isPlayer": true
+    }
+  ]
+}
